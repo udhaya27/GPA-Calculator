@@ -1,13 +1,166 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar .submit {
+  padding: 8px 16px;
+  background-color: rgb(90, 41, 225);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar .submit:hover {
+  background-color: rgb(90, 41, 225);
+}
+
+.navbar h1{
+  color: rgb(90, 41, 225);
+  text-align: center;
+  max-width: 700px;
+  display:ruby-text;
+  margin: 0 auto;
+  font-size: 2.0em;
+  border-bottom: 1px solid rgba(13, 20, 37, 0.753);
+}
+
+.login {
+  max-width: 700px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+form{
+  width: 100%;
+  max-width: 400px;
+  padding: 150px;
+}
+.legend {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: rgb(90, 41, 225);
+}
+.label{
+  color: rgb(90, 41, 225);
+  font-size: 1.3em;
+  font-weight: bold; 
+}
+
+.label1{
+  color: rgb(90, 41, 225);
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.button{
+  color: white;
+  padding: auto;
+  font-size: 1.0em;
+  font-weight: bold;
+  background-color: rgb(90, 41, 225);
+  
+}
+
+.error{
+  color: red;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+
+.home {
+  max-width: 700px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.home .subjects {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #5a29e1;
+  margin-bottom: 10px;
+}
+.home select {
+  width: 100px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.home .subbutton {
+  background-color: #5a29e1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-right: 250px;
+}
+
+.home .subbutton:hover {
+  background-color: #4723b6;
+}
+
+
+.home .sub-button:focus {
+  outline: none;
+}
+
+.home .deletebutton{
+  background-color:#5a29e1;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+
+.home .deletebutton:hover{
+  background-color: #4723b6;
+}
+
+.home .gpabutton{
+  background-color: #5a29e1;
+  color: white;
+  border: none;
+  padding: 10px 20px ;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.home .gpabutton:hover{
+  background-color: #4723b6;
+}
+
+.home .gpabutton:focus{
+  outline: none;
 }
